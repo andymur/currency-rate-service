@@ -1,0 +1,19 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8090
+
+  adminConnectors:
+    - type: http
+      port: 8091
+
+# Task settings
+jobs:
+  rateUpdaterTask: 4s
+
+# Logging settings.
+logging:
+  level: INFO
+  appenders:
+    - type: console
+      target: stdout
